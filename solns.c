@@ -13,6 +13,17 @@ int max(int k[], int n){
     
 }
 
+int min(int k[], int n){
+    int minimum=k[0];
+    for (int i=0;i<n;i++){
+        if (k[i]<minimum){
+            minimum=k[i];
+        }
+    }
+    return minimum;
+}
+
+
 float average(int k[], int n){
     float sum=0.00;
     for (int i=0;i<n;i++){
