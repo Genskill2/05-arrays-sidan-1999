@@ -33,3 +33,24 @@ float average(int k[], int n){
     return result;
 }
 
+
+
+int mode(int a[],int n) {
+   int mod , max = 0;
+
+   for (int i= 0; i < n; ++i) {
+      int count = 0;
+      
+      for (int j= 0; j < n; ++j) {
+         if (a[j] == a[i])
+         ++count;
+      }
+      
+      if (count > max) {
+         mod = a[i];
+      }
+   }
+
+   return mod;
+}
+
