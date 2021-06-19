@@ -54,3 +54,21 @@ int mode(int a[],int n) {
    return mod;
 }
 
+
+
+int factors(int n, int k[]){
+    int prime,a=0,b=0;
+    for (int i=2;n>1;i++){
+        while (n%i==0){
+            k[a]=i;
+            a++;
+            n=n/i;
+            b++;
+            
+        }
+    }
+    
+    return b;
+    
+}
+
